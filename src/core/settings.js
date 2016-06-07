@@ -20,7 +20,9 @@ class BaseSettings {
 }
 
 var temp = new BaseSettings().factory('$ionicCoreSettings', function() {
-  "IONIC_SETTINGS_STRING_START";"IONIC_SETTINGS_STRING_END";
+  "IONIC_SETTINGS_STRING_START";
+  var settings = {"dev_push":false,"app_id":"df4807b5","api_key":"a07f715841d9e144227ed826059a3791d3ff33896938db6f","gcm_key":"69630578016"}; return { get: function(setting) { if (settings[setting]) { return settings[setting]; } return null; } }
+  "IONIC_SETTINGS_STRING_END";
 })
 
 .finish();

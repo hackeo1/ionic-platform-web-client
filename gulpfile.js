@@ -82,7 +82,7 @@ gulp.task('build-bundle', ['clean'], function() {
   .pipe(fs.createWriteStream(buildConfig.dist + "/ionic.io.bundle.js"));
 });
 
-gulp.task('clean', ['lint'], function() {
+gulp.task('clean', function() {
   return del(['dist/**/*']);
 });
 
